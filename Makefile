@@ -1,9 +1,6 @@
 
-$(NAME)
 
 all: build
-
-$(NAME): build
 
 build:
 	go build .
