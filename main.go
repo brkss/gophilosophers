@@ -1,11 +1,23 @@
 package main 
 
-import "fmt"
+import (
+  "fmt"
+  "os"
+  "log"
+)
 
 
 func main(){
 
+  argv := os.Args
 
-  fmt.Println("Hello World 👋")
+  // check args validity 
+  if len(argv) != 5 && len(argv) != 6 {
+    log.Fatal("Invalid Args !")
+  }
+
+
+
+  fmt.Println("args : ", argv)
 
 }
